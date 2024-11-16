@@ -12,7 +12,9 @@
     <script src="js/script.js" defer></script>
 </head>
 <body class="bg-BgFound">
-    <div id="loginContainer">
+
+    <!-- LOGIN -->
+    <div id="loginContainer" class="">
         <div id="img" class="w-72 m-auto">
             <img src="./img/LogoUrbanizeTransparente.png" alt="Logo Urbanize">
         </div>
@@ -29,13 +31,40 @@
         <div class=" flex justify-around items-center rounded-md mt-2 mx-auto p-2 border border-gray-300 w-60">
             <p>Entrar com:</p>
             <div class="flex gap-x-4 justify-center items-center">
-                <a href="#"><img class="w-8" src="img/google.png" alt="Logo Google"></a>
-                <a href="#"><img class="w-14" src="img/gov.br.svg" alt="Logo GOV"></a>
+                <a href="#" id="imgGoogle"><img class="w-8" src="img/google.png" alt="Logo Google"></a>
+                <a href="#" id="imgGOV"><img class="w-14" src="img/gov.br.svg" alt="Logo GOV"></a>
             </div>
         </div>
-        <div class="w-80 m-auto mt-5 border-t border-t-gray-300 pb-3">
+        <div class="w-80 m-auto mt-5 border-t border-t-gray-300 pb-3" id="btnRegister">
             <button class="mt-5 w-full bg-colorLink text-white px-3 py-2 rounded-md font-medium">Cadastrar</button>
         </div>
     </div>
+
+    <!-- CADASTRO -->
+     <div id="registerContainer" class="hidden">
+        <div id="img">
+            <img class="w-48 m-auto" src="img/LogoUrbanizeTransparente.png" alt="Logo Urbanize">
+        </div>
+        <div id="formRegisterBox">
+            <form class="px-3">
+                <div class="p-3 flex flex-col">
+                    <input class="p-3 font-medium border-gray-300 bg-transparent border" type="text" placeholder="Nome completo">
+                    <input class="p-3 font-medium border-gray-300 mt-3 bg-transparent border" type="email" placeholder="E-mail">
+                    <input class="p-3 font-medium border-gray-300 mt-3 bg-transparent border" type="number" placeholder="CPF">
+                    <input class="p-3 font-medium border-gray-300 mt-3 bg-transparent border" type="password" placeholder="Senha">
+                    <input class="p-3 font-medium border-gray-300 mt-3 bg-transparent border" type="password" placeholder="Confirmar senha">
+                </div>
+                <div class="p-3">
+                    <button class="bg-gradient-custom text-white w-full mt-4 p-3 rounded-md border-none font-medium text-lg">Cadastrar</button>
+                    <!--rounded-md mt-5 px-3 py-2 border-none font-medium text-lg text-white -->
+                </div>
+            </form>
+            <div class="px-6 py-3" id="alreadyHaveRegister">
+                <a href="#" class="w-full block text-center font-semibold text-gray-600 border-t border-t-gray-300 pt-3">Já possuo cadastro</a>
+            </div>
+        </div>
+
+     </div>
+    
 </body>
 </html>
