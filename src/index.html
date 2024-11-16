@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Urbanize</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <link rel="shortcut icon" href="img/governo.png" type="image/x-icon">
     <link href="./output.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body class="bg-BgFound">
@@ -14,9 +18,11 @@
         </div>
         <div id="formBox" class="px-3">
                 <form class="flex flex-col gap-y-1">
-                    <input class="p-3 bg-transparent rounded-md border border-gray-300 font-medium" type="email" placeholder="E-mail">
-                    <input class="p-3 bg-transparent rounded-md border border-gray-300 font-medium mt-3" type="password" placeholder="Senha">
-                    <button type="submit" class="bg-btn-Enter rounded-md mt-5 px-3 py-2 border-none font-medium text-lg text-white">Entrar</button>
+                    <input id="inputEmail" class="p-3 bg-transparent rounded-md border border-gray-300 font-medium" type="email" placeholder="E-mail">
+                    <div id="inputRequiredEmail" class="hidden text-xs ml-2 text-red-500"><p>* Preenche o campo!</p></div>
+                    <input id="inputPassword" class="p-3 bg-transparent rounded-md border border-gray-300 font-medium mt-3" type="password" placeholder="Senha">
+                    <div id="inputRequiredPassword" class="hidden text-xs ml-2 text-red-500"><p>* Preenche o campo!</p></div>
+                    <button type="button" id="btnEnter" class="bg-gradient-custom rounded-md mt-5 px-3 py-2 border-none font-medium text-lg text-white">Entrar</button>
                 </form>
         </div>
         <p class="text-center text-sm p-3 mt-2">Esqueceu a senha? <a href="#" class="font-medium text-colorLink border-b border-colorLink">Clique aqui.</a></p>
@@ -27,7 +33,7 @@
                 <a href="#"><img class="w-14" src="img/gov.br.svg" alt="Logo GOV"></a>
             </div>
         </div>
-        <div class="w-80 m-auto mt-5 border-t border-t-gray-300">
+        <div class="w-80 m-auto mt-5 border-t border-t-gray-300 pb-3">
             <button class="mt-5 w-full bg-colorLink text-white px-3 py-2 rounded-md font-medium">Cadastrar</button>
         </div>
     </div>

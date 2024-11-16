@@ -7,8 +7,12 @@ module.exports = {
         'BgFound': '#F2F4F7',
         'btn-Enter': '#42B72A',
         'colorLink': '#0866FF'
+      },
+      backgroundImage: {
+        'gradient-custom': 'linear-gradient(to right, #00b09b, #96c93d)'
       }
     },
   },
   plugins: [],
 }
+
