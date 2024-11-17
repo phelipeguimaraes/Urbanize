@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urbanize</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     
     <link rel="shortcut icon" href="./img/governo.png" type="image/x-icon">
     <link href="./output.css" rel="stylesheet">
    <script src="js2/script.js" defer></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
     
 </head>
 <body>
@@ -61,7 +64,8 @@
                 </div>
             </div>
             <div class="text-center mb-3 mx-auto border-t w-52">
-                <p class="text-colorLink text-sm font-semibold mt-2">Não recebeu o código?</p>
+                <button id="codeAgain" class="text-colorLink text-sm font-semibold mt-2 w-40 m-auto cursor-pointer hover:underline">Não recebeu o código?</button>
+                <p id="countdown"></p>
             </div>
         </div>
     </div>
