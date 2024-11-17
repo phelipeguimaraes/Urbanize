@@ -10,6 +10,13 @@
     <link href="./output.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
     <script src="js/script.js" defer></script>
+
+    <style>
+        input:focus{
+            outline: none;
+        }
+    </style>
+    
 </head>
 <body class="bg-BgFound">
 
@@ -27,7 +34,7 @@
                     <button type="button" id="btnEnter" class="bg-gradient-custom rounded-md mt-5 px-3 py-2 border-none font-medium text-lg text-white">Entrar</button>
                 </form>
         </div>
-        <p class="text-center text-sm p-3 mt-2">Esqueceu a senha? <a href="#" class="font-medium text-colorLink border-b border-colorLink">Clique aqui.</a></p>
+        <p class="text-center text-sm p-3 mt-2">Esqueceu a senha? <a href="./forgetPassowrd.html" class="font-medium text-colorLink border-b border-colorLink">Clique aqui.</a></p>
         <div class=" flex justify-around items-center rounded-md mt-2 mx-auto p-2 border border-gray-300 w-60">
             <p>Entrar com:</p>
             <div class="flex gap-x-4 justify-center items-center">
@@ -48,14 +55,19 @@
         <div id="formRegisterBox">
             <form class="px-3">
                 <div class="p-3 flex flex-col">
-                    <input class="p-3 font-medium border-gray-300 bg-transparent border" type="text" placeholder="Nome completo">
-                    <input class="p-3 font-medium border-gray-300 mt-3 bg-transparent border" type="email" placeholder="E-mail">
-                    <input class="p-3 font-medium border-gray-300 mt-3 bg-transparent border" type="number" placeholder="CPF">
-                    <input class="p-3 font-medium border-gray-300 mt-3 bg-transparent border" type="password" placeholder="Senha">
-                    <input class="p-3 font-medium border-gray-300 mt-3 bg-transparent border" type="password" placeholder="Confirmar senha">
+                    <input class="inputTeste p-3 rounded-md font-medium border-gray-300 bg-transparent border" type="text" placeholder="Nome completo">
+                    <div class="textRed hidden text-xs ml-2 text-red-500"><p>* Preenche o campo!</p></div>
+                    <input class="inputTeste p-3 rounded-md font-medium border-gray-300 mt-3 bg-transparent border" type="email" placeholder="E-mail">
+                    <div class="textRed hidden text-xs ml-2 text-red-500"><p>* Preenche o campo!</p></div>
+                    <input class="inputTeste p-3 rounded-md font-medium border-gray-300 mt-3 bg-transparent border" type="number" placeholder="CPF">
+                    <div class="textRed hidden text-xs ml-2 text-red-500"><p>* Preenche o campo!</p></div>
+                    <input class="inputTeste p-3 rounded-md font-medium border-gray-300 mt-3 bg-transparent border" type="password" placeholder="Senha">
+                    <div class="textRed hidden text-xs ml-2 text-red-500"><p>* Preenche o campo!</p></div>
+                    <input class="inputTeste p-3 rounded-md font-medium border-gray-300 mt-3 bg-transparent border" type="password" placeholder="Confirmar senha">
+                    <div class="textRed hidden text-xs ml-2 text-red-500"><p>* Preenche o campo!</p></div>
                 </div>
                 <div class="p-3">
-                    <button class="bg-gradient-custom text-white w-full mt-4 p-3 rounded-md border-none font-medium text-lg">Cadastrar</button>
+                    <button id="btnRegisterUser" class="bg-gradient-custom text-white w-full mt-4 p-3 rounded-md border-none font-medium text-lg">Cadastrar</button>
                     <!--rounded-md mt-5 px-3 py-2 border-none font-medium text-lg text-white -->
                 </div>
             </form>
